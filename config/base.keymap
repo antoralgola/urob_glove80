@@ -187,7 +187,7 @@ SIMPLE_MORPH(spc_morph, SFT, &kp SPACE, &dot_spc)
 ZMK_BEHAVIOR(dot_spc, macro,
     wait-ms = <0>;
     tap-ms = <5>;
-    bindings = <&kp DOT &kp SPACE &sk LSHFT>
+    bindings = <&kp DOT &kp SPACE &sk LSHFT>;
 )
 
 // tap: backspace | lshft + tap: delete | rshft + tap: shift-delete
