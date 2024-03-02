@@ -196,8 +196,6 @@ ZMK_BEHAVIOR(spc_ht, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <300>;
     quick-tap-ms = <175>;
-    compatible = "zmk,behavior-hold-tap";
-    label = "SPACE_HOLD_TAP";
     bindings = <&kp>, <&kp>;
     require-prior-idle-ms = <175>;
 )
