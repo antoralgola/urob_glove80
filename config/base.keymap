@@ -192,6 +192,13 @@ ZMK_BEHAVIOR(dot_spc, macro,
     bindings = <&kp DOT &kp SPACE &sk LSHFT>;
 )
 
+ZMK_BEHAVIOR(sbspc, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <300>;
+    quick-tap-ms = <175>;
+    bindings = <&kp>, <&kp>;
+    require-prior-idle-ms = <175>;
+)
 ZMK_BEHAVIOR(spc_ht, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <300>;
@@ -256,7 +263,7 @@ ZMK_LAYER(base,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LB     &kp Z         &kp X         &kp C         &kp D         &kp V           X_MB     &kp K         &kp H         &comma_morph  &dot_morph    &qexcl          X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-    X_LH                                              &lt_bspc NAV 0 &kp LSHFT       X_MH     &lt FN RET    &spc_ht RALT SPACE                                        X_RH
+    X_LH                                              &lt_bspc NAV 0 &sbspc LSHFT BSPC X_MH   &lt FN RET    &spc_ht RALT SPACE                                       X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
 
