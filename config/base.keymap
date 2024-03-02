@@ -26,6 +26,8 @@
 #define XXX &none
 #define ___ &trans
 
+#define X_MB    &none &none &none       &none &none &smart_shft
+
 /* Global settings */
 
 #define QUICK_TAP_MS 175
@@ -247,7 +249,7 @@ ZMK_LAYER(base,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LB     &kp Z         &kp X         &kp C         &kp D         &kp V           X_MB     &kp K         &kp H         &comma_morph  &dot_morph    &qexcl          X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-    X_LH                                               &lt_bspc NAV 0 &lt FN RET      X_MH     SMART_NUM     &kp SPACE    &smart_shft                                 X_RH
+    X_LH                                               &lt_bspc NAV 0 &lt FN RET     X_MH     SMART_NUM     &kp SPACE                                                 X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
 
