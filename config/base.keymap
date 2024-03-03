@@ -250,7 +250,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define PIN_APP     &kp LG(LC(LS(A)))        // pin application across desktops
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
 #define VOL_DOWN    &hmr LCTRL C_VOL_DN
-//#define STF_BSPC    &sbspc LSHFT BSPC
+#define STF_BSPC    &sbspc LSHFT BSPC
 
 
 /* Keymap */
@@ -265,7 +265,7 @@ ZMK_LAYER(base,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LB     &kp Z         &kp X         &kp C         &kp D         &kp V           X_MB     &kp K         &kp H         &comma_morph  &dot_morph    &qexcl          X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-    X_LH                                               &sbspc LSHFT BSPC     &lt_bspc NAV 0  X_MH   &lt FN RET    &spc_ht RALT SPACE                                   X_RH
+    X_LH                                               &sbspc LSHFT BSPC     &lt_bspc NAV 0  X_MH   &lt FN RET    &spc_ht RALT SPACE                                  X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
 
