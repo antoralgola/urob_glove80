@@ -253,8 +253,10 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define DEL_NAV     &lt NAV DEL
 #define RET_FN      &lt FN RET
 #define SPACE_RALT  &spc_ht RALT SPACE
+#define SQT_ALT     &sbspc ALT SQT
 
 #define X_MB    &none &none SMART_NUM     &none &none &smart_shft
+#define X_MH    SQT_ALT &none
 /* Keymap */
 
 ZMK_CONDITIONAL_LAYER(FN NUM, SYS)  // FN + NUM --> SYS
@@ -273,7 +275,7 @@ ZMK_LAYER(base,
 
 ZMK_LAYER(nav,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-    X_LT     ___          &kp LC(PG_UP)  &kp LC(W)    &kp LC(PG_DN)  &kp K_UNDO     X_MT     &kp PG_UP     NAV_BSPC      &kp UP        NAV_DEL       ___             X_RT
+    X_LT     ___          &kp LC(PG_UP)  &kp LC(W)    &kp LC(PG_DN)  &kp LC(Z)     X_MT     &kp PG_UP     NAV_BSPC      &kp UP        NAV_DEL       ___             X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LM     &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &copy_cut       X_MM     &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp RET         X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
