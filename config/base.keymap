@@ -253,7 +253,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define BSPC_SFT    &sbspc LSHFT BSPC
 #define BSPC_NAV    &lt_bspc NAV 0
 #define RET_FN      &lt FN RET
-
+#define SPACE_RALT  &spc_ht RALT SPACE
 
 /* Keymap */
 
@@ -267,7 +267,7 @@ ZMK_LAYER(base,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LB     &kp Z         &kp X         &kp C         &kp D         &kp V           X_MB     &kp K         &kp H         &comma_morph  &dot_morph    &qexcl          X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-    X_LH                                               BSPC_SFT     BSPC_NAV         X_MH     RET_FN        &spc_ht RALT SPACE                                  X_RH
+    X_LH                                               BSPC_SFT     BSPC_NAV         X_MH     RET_FN        SPACE_RALT                                                X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
 
