@@ -254,7 +254,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define RET_FN      &lt FN RET
 #define SPACE_RALT  &spc_ht RALT SPACE
 #define SQT_ALT     &sbspc ALT SQT
-#define X_MB        SQT_ALT &none SMART_NUM     &none &none &smart_shft //the three keys at the bottom of the Glove 80
+#define X_MB        &none &none SMART_NUM     &none &none &smart_shft //the three keys at the bottom of the Glove 80
 //#define X_MH        SQT_ALT &none //the three keys at the bottom of the Glove 80
 /* Keymap */
 
