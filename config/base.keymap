@@ -257,7 +257,8 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define SPACE_RALT  &spc_ht RALT SPACE
 #define SQT_ALT     &sbspc ALT SQT
 #define X_MB        &none &none SMART_NUM     &none &none &smart_shft //the three keys at the bottom of the Glove 80
-//#define X_MH        SQT_ALT &none //the three keys at the bottom of the Glove 80
+#define X_MH        &none &none //the three keys at the bottom of the Glove 80
+//#define X_MH      SQT_ALT &none //the three keys at the bottom of the Glove 80
 /* Keymap */
 
 ZMK_CONDITIONAL_LAYER(FN NUM, SYS)  // FN + NUM --> SYS
