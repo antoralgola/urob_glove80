@@ -228,6 +228,12 @@ ZMK_BEHAVIOR(bs_del, mod_morph,
     keep-mods = <MOD_RSFT>;
 )
 
+// tap: right | double-tap: end
+ZMK_BEHAVIOR(right_end, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&kp RIGHT>, <&kp END>;
+)
+
 // tap: copy | double-tap: cut
 ZMK_BEHAVIOR(copy_cut, tap_dance,
     tapping-term-ms = <200>;
@@ -257,7 +263,7 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define SPACE_RALT  &spc_ht RALT SPACE
 #define SQT_ALT     &sbspc ALT SQT
 #define X_MB        &kp LALT &kp LCTRL SMART_NUM     &none &none &smart_shft //the three keys at the bottom of the Glove 80
-#define X_MH        &none &none //the three keys at the bottom of the Glove 80
+#define X_MH        &none &none //the two keys at the bottom of the Glove 80
 //#define X_MH        SQT_ALT &none //the three keys at the bottom of the Glove 80
 /* Keymap */
 
@@ -279,7 +285,7 @@ ZMK_LAYER(nav,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
     X_LT     ___          &kp LC(PG_UP)  &kp LC(W)    &kp LC(PG_DN)  &kp LC(Z)       X_MT     &kp PG_UP     NAV_BSPC      &kp UP        NAV_DEL       ___             X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LM     &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &copy_cut       X_MM     &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp RET         X_RM
+    X_LM     &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &copy_cut       X_MM     &kp PG_DN     &kp LEFT      &kp DOWN      &right_end     &kp RET         X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LB     ___           ___           &kp LS(TAB)   &swapper      &kp LC(V)       X_MB     &kp INS       &kp TAB       &kp LT        &kp GT        ___             X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
