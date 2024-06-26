@@ -257,8 +257,8 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define SPACE_RALT  &spc_ht RALT SPACE
 #define SQT_ALT     &sbspc ALT SQT
 #define X_MB        &kp LALT &kp LCTRL SMART_NUM     &none &none &smart_shft //the three keys at the bottom of the Glove 80
-#define X_MH        &mo QWERTY &none //the two keys at the bottom of the Glove 80
-#define X_MHQ       &mo DEF &none //the two keys at the bottom of the Glove 80
+#define X_MH        &tog QWERTY &none //the two keys at the bottom of the Glove 80
+#define X_MHQ       &tog DEF &none //the two keys at the bottom of the Glove 80
 //#define X_MH        SQT_ALT &none //the three keys at the bottom of the Glove 80
 /* Keymap */
 /* Keymap */
@@ -355,7 +355,7 @@ ZMK_LAYER(qwerty,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
     X_LT     &kp Q         &kp W         &kp E         &kp R         &kp T           X_MT     &kp Y         &kp U        &kp I         &kp O         &kp P           X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LM     &kp A         &kp S         &kp D         &kp F         &kp G           X_MM     &kp H         &kp J         &kp K         &kp L         &kp ;          X_RM
+    X_LM     &kp A         &kp S         &kp D         &kp F         &kp G           X_MM     &kp H         &kp J         &kp K         &kp L         &kp UNDER          X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LB     &kp Z         &kp X         &kp C         &kp V         &kp B           X_MB     &kp N         &kp M         &comma_morph  &dot_morph    &qexcl          X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
