@@ -18,6 +18,7 @@
 #define SYS 4
 #define UC 5
 #define MOUSE 6
+#define QWERTY 7
 
 #include "combos.dtsi"  // requires layer aliases
 #include "mouse.dtsi"
@@ -256,7 +257,8 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define SPACE_RALT  &spc_ht RALT SPACE
 #define SQT_ALT     &sbspc ALT SQT
 #define X_MB        &kp LALT &kp LCTRL SMART_NUM     &none &none &smart_shft //the three keys at the bottom of the Glove 80
-#define X_MH        &none &none //the two keys at the bottom of the Glove 80
+#define X_MH        &mo QWERTY &none //the two keys at the bottom of the Glove 80
+#define X_MHQ       &mo DEF &none //the two keys at the bottom of the Glove 80
 //#define X_MH        SQT_ALT &none //the three keys at the bottom of the Glove 80
 /* Keymap */
 /* Keymap */
@@ -274,6 +276,20 @@ ZMK_LAYER(base,
     X_LH                                               BSPC_NAV     DEL_SFT          X_MH     RET_FN        SPACE_RALT                                                X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
+
+ZMK_LAYER(qwerty,
+//╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
+    X_LT     &kp Q         &kp W         &kp E         &kp R         &kp T           X_MT     &kp J         &kp L         &kp U         &kp Y         &kp SQT         X_RT
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    X_LM     &kp A         &kp S         &kp T         &hml LSHFT T  &kp G           X_MM     &kp M         &hmr RSHFT N  &hmr LCTRL E  &hmr LALT I   &hmr LGUI O     X_RM
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    X_LB     &kp Z         &kp X         &kp C         &kp D         &kp V           X_MB     &kp K         &kp H         &comma_morph  &dot_morph    &qexcl          X_RB
+//├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
+    X_LH                                               BSPC_NAV     DEL_SFT          X_MHQ    RET_FN        SPACE_RALT                                                X_RH
+//╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
+)
+
+
 
 ZMK_LAYER(nav,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
